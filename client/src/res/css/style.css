@@ -633,7 +633,7 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(90); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -652,7 +652,7 @@ body {
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
-    left: 0; }
+    left: 0rem; }
   .navigation__icon::before {
     top: -.8rem; }
   .navigation__icon::after {

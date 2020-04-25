@@ -2,12 +2,13 @@ const nodeMailer = require('nodemailer');
 const mailGun = require('nodemailer-mailgun-transport');
 const { Hello } = require('./emailTemplates/helloTemplate');
 const { rightsTemplate } = require('./emailTemplates/rightsTemplate');
+const keys = require('../config/keys');
 
 // Step1 Authentication using API-Key
 const auth = {
   auth: {
-    api_key: "55e98fa15b3fc5bf3732e9b53f8703d3-46ac6b00-15594ad8",
-    domain: "sandbox5d27f177cbf9492890f0d8d444cb9a15.mailgun.org"
+    api_key: keys.sendMailGunKey,
+    domain: keys.sendMailGunDomain
   }
 };
 
