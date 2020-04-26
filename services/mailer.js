@@ -63,7 +63,7 @@ const  sendMail = async (from, subject, body, template, survey, cb) => {
     console.log("the error is : ",err);
     return cb(err, null);
   } else {
-    console.log("Email sent via NodeMailer", data);
+    console.log("Email sent via NodeMailer is:", data);
     return cb(null, data);
   }
 });
