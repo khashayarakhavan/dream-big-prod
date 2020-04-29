@@ -54,7 +54,7 @@
     &__background {
         height: 6rem;
         width: 6rem;
-        border-radius: 50%;
+        border-radius: 50%;  
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
@@ -120,6 +120,10 @@
     //Functionality
     &__checkbox:checked ~ &__background {
         transform: scale(90);
+        // width: 10vw;
+        // height: 100vh;
+        // top: 0;
+        // right: 0;
     }
 
     &__checkbox:checked ~ &__nav {
@@ -156,10 +160,12 @@
 
     &__button:hover &__icon::before {
         top: 1rem;
+        
     }
 
     &__button:hover &__icon::after {
         top: -1rem;
+        
     }
     
     &__checkbox:checked + &__button &__icon {

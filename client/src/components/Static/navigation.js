@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Template = () => {
     return (
@@ -12,7 +13,10 @@ const Template = () => {
            {/* Here is the section which covers the whole page when toggle is clicked.  */}
            <nav className="navigation__nav">
                <ul className="navigation__list">
-                    <li className="navigation__item"><a href="#" className="navigation__link"><span>01</span>About</a></li>
+                    <li className="navigation__item">
+                    <Link to="/surveys/new" className="navigation__link"><span>01</span>Send Email</Link>
+    
+                    </li>
                     <li className="navigation__item"><a href="#" className="navigation__link"><span>02</span>Profile</a></li>
                     <li className="navigation__item"><a href="#" className="navigation__link"><span>03</span>Tours</a></li>
                     <li className="navigation__item"><a href="#" className="navigation__link"><span>04</span>Bigger Titles here</a></li>

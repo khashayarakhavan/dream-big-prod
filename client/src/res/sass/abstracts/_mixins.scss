@@ -6,16 +6,45 @@
     }
 }
 
-@mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 @mixin centerAll {
      position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+}
+
+// Media Query Manager
+
+/* 
+0 - 200px:      Light-Bar
+200 - 600px:    Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet Landscape
+1200 - 1800px:  Desktop First CSS
++1800px:        Desktop Big
+*/
+
+/* Order of responsive design in a Desktop-First Approach 
+(from Large to Small screen size using Max width media query)
+
+ORDER: Base + Typography > General layout + Grid > Page layout > Components
+*/
+
+// Browsers' default: 1em = 16px // Medium Font-size
+@mixin respond($breakpoint) {
+    @if $breakpoint == lightBar {
+        @media (max-width: 12.5em) { @content }; // 200px
+    }
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }; // 1200px
+    }
+    @if $breakpoint == desk-big {
+        @media (min-width: 100em) { @content }; // 1600px
+    }
 }

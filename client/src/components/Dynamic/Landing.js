@@ -19,7 +19,7 @@ const Landing = () => {
           <SectionAbout ID='2' />
           <SectionFeatures ID='3'/>
           <SectionTours ID='4' />
-          <SectionStories ID='5'/>
+          <SectionStories  id='story'/>
           <Booking ID='6'/>
           <SectionFooter ID='7' />
         </main> 
