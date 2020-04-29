@@ -20,6 +20,10 @@
         box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
         cursor: pointer;
         
+        @include respond(tab-port) {
+            top: 4rem;
+        right: 2rem;
+        }
          &:hover {
         
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
@@ -62,6 +66,11 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         // transform: scale(80);
           transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+          
+            @include respond(tab-port) {
+            top: 4.5rem;
+        right: 2.5rem;
+        }
     }
     
     &__nav {
