@@ -8,6 +8,8 @@ import SectionFeatures from '../Static/sectionFeatures';
 import SectionTours from '../Static/sectionTours';
 import SectionFooter from '../Static/sectionFooter';
 import Navigation from '../Static/navigation';
+import PopUp from '../Static/popUp';
+
 import '../../res/css/style.css';
 
 const Landing = () => {
@@ -19,9 +21,10 @@ const Landing = () => {
           <SectionAbout ID='2' />
           <SectionFeatures ID='3'/>
           <SectionTours ID='4' />
-          <SectionStories  id='story'/>
+          <SectionStories ID='5'/>
           <Booking ID='6'/>
           <SectionFooter ID='7' />
+          <PopUp key='9' />
         </main> 
       </div>       
     );

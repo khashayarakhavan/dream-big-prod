@@ -2,6 +2,12 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    // Here defines the space around row in viewports below tab-port.
+    @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+    
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
@@ -10,10 +16,6 @@
         }
     }
 
-    @include respond(tab-port) {
-        max-width: 50rem;
-    }
-    
     @include clearfix;
 
     [class^="col-"] {

@@ -2,6 +2,10 @@
     background-color: $color-grey-light-1;
     padding: 25rem 10rem;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
 }
 
 .section-features {
@@ -20,6 +24,10 @@
         transform: skewY(7deg);
     }
 
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
 }
 
 .section-tours {
@@ -27,18 +35,29 @@
     background-color: $color-grey-light-1;
     padding: 25rem 10rem 15rem 10rem;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 5rem 10rem 5rem;
+    }
 }
 
 .section-stories {
     position: relative;
     padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0rem;
+    }
     // background-color: lightblue;
 }
 
 .section-booking {
     padding: 15rem 0;
-    
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    @include respond(tab-port) {
+        padding: 10rem 0rem;
+    }
+    
 }
 
 .book {
@@ -49,13 +68,43 @@
                                         transparent  50%),
                                         url(../img/nat-10.jpg);
     background-size: 100%;
-    height: 50rem;
-   
+  
     border-radius: $round-huge;
     box-shadow: 0 1rem 6rem rgba($color-black, .65);
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 70%;
+            border-radius: $round-small;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            border-radius: $round-small;
+        }
+    }
+
+    @include respond(tab-land) {
+        background-size: cover;
+        border-radius: $round-small;
+        background-image:  linear-gradient(105deg, 
+                                        rgba($color-white, 0.9) 0%,
+                                        rgba($color-white, 0.9) 60%,
+                                        transparent  60%),
+                                        url(../img/nat-10.jpg);
+
+    }
+
+    @include respond(tab-port) {
+       
+        border-radius: $round-small;
+        background-image:  linear-gradient(to right, 
+                                        rgba($color-white, 0.85) 0%,
+                                        rgba($color-white, 0.85) 100%),
+                                        url(../img/nat-10.jpg);
+
     }
 }

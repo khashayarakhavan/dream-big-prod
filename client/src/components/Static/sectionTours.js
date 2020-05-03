@@ -4,7 +4,7 @@ class Template extends Component {
     render() {
 
         return (
-            <section className="section-tours">
+            <section className="section-tours" id="section-tours">
                 <div className="u-center-text u-margin-bottom-medium">
                     <h2 className="heading-secondary">Exciting experience</h2>
                 </div>
@@ -34,7 +34,7 @@ class Template extends Component {
                                         <p className="card__price-only">Only</p>
                                         <p className="card__price-value">299$</p>
                                     </div>
-                                    <a href="#" onClick={e => { e.preventDefault() }} className="btn btn--white">Book now!</a>
+                                    <a href="#popup"  className="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ class Template extends Component {
                                         <p className="card__price-only">Only</p>
                                         <p className="card__price-value">299$</p>
                                     </div>
-                                    <a href="#" onClick={e => { e.preventDefault() }} className="btn btn--white">Book now!</a>
+                                    <a href="#popup" className="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ class Template extends Component {
                                         <p className="card__price-only">Only</p>
                                         <p className="card__price-value">299$</p>
                                     </div>
-                                    <a href="#" onClick={e => { e.preventDefault() }} className="btn btn--white">Book now!</a>
+                                    <a href="#popup" className="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>

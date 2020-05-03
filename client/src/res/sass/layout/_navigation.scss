@@ -7,24 +7,28 @@
 
     &__button {
         background-color: $color-white;
-        
         height: 7rem;
         width: 7rem;
         text-align: center;
-         position: fixed;
-           border-radius: 50%;
+        position: fixed;
+        border-radius: 50%;
         top: 6rem;
         right: 6rem;
-        
-        z-index: 2000;
+        z-index: $layer-3;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
         cursor: pointer;
         
+        // RESPONSIVE: Define the margins of foreground circle in the menu button. 
         @include respond(tab-port) {
             top: 4rem;
-        right: 2rem;
+            right: 2rem;
         }
-         &:hover {
+        @include respond(phone) {
+            top: 3rem;
+            right: 1rem;
+        }
+
+        &:hover {
         
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
@@ -64,12 +68,16 @@
         right: 6.5rem;
         z-index: 1000;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
-        // transform: scale(80);
-          transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-          
-            @include respond(tab-port) {
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
+        // RESPONSIVE: Define the margins of background circle behind the menu button. 
+        @include respond(tab-port) {
             top: 4.5rem;
-        right: 2.5rem;
+            right: 2.5rem;
+        }
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 1.5rem;
         }
     }
     

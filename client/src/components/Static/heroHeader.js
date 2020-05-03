@@ -12,7 +12,7 @@ const Template = () => {
                     <span className="heading-primary--main">Shajabaja</span>
                     <span className="heading-primary--sub">where dreams start</span>
                 </h1>
-                <a href="#" onClick={e => { e.preventDefault() }} class="btn btn--white btn--animated">
+                <a href="#section-tours"  class="btn btn--white btn--animated">
                     Discover options
             </a>
             </div>

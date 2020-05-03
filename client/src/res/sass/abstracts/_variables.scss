@@ -28,10 +28,21 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
+$gutter-horizontal: 10rem;
 
 // Border
 $round-small: 3px;
 $round-medium: 10px;
 $round-large: 20px;
 $round-huge: 100px;
+
+// Z-index
+$layer-bottom: -10000;
+$layer-B3: -2000;
+$layer-B2: -1500;
+$layer-B1: -1000;
+$layer-G: 0;
+$layer-1: 1000;
+$layer-2: 1500;
+$layer-3: 2000;
+$layer-top: 10000;

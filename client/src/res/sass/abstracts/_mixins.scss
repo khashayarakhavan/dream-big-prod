@@ -30,8 +30,9 @@
 ORDER: Base + Typography > General layout + Grid > Page layout > Components
 */
 
-// Browsers' default: 1em = 16px // Medium Font-size
 @mixin respond($breakpoint) {
+    // Browsers' default: 1em = 16px // Medium Font-size
+    
     @if $breakpoint == lightBar {
         @media (max-width: 12.5em) { @content }; // 200px
     }

@@ -1,13 +1,24 @@
 import React from 'react';
 
 import p1 from '../../res/img/logo-green-2x.png';
+import p1small from '../../res/img/logo-green-1x.png';
+import p2 from '../../res/img/logo-green-small-2x.png';
+import p2small from '../../res/img/logo-green-small-1x.png';
 
 const Template = () => {
     return (
         <footer className="section-footer">
         <div className="footer">
+
+        {/* Art Direction for footer photo, changing size and resolution based on media queries. */}
         <div className="footer__logo-box">
-            <img src={p1} alt="Fullsize logo" className="footer__logo"/>
+                    <picture className="footer__logo">
+                        <source srcSet={`${p2small} 1x, ${p2} 2x`} media="(max-width: 37.5em)" />
+                        <img
+                            className="footer__logo"
+                            srcSet={`${p1small} 1x, ${p1} 2x`}
+                            alt="Full Logo" />
+                    </picture>;    
         </div>
         <div className="row">
             <div className="col-1-of-2">

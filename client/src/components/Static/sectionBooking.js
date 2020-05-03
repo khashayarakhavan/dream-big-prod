@@ -12,7 +12,7 @@ class Booking extends Component {
                                 <div className="u-margin-bottom-medium">
                                     <h2 className="heading-secondary">Book now!</h2>
                                 </div>
-                                <div className="form__group">
+                                <div className="form__group ">
                                     <input type="text" className="form__input" id="fullname" placeholder="fullname" required />
                                     <label htmlFor="fullname" className="form__label">fullname</label>
                                 </div>
@@ -20,7 +20,7 @@ class Booking extends Component {
                                     <input type="email" className="form__input" id="email" placeholder="email address" required />
                                     <label htmlFor="email" className="form__label">email address</label>
                                 </div>
-                                <div className="form__group u-margin-bottom-large">
+                                <div className="form__group u-margin-bottom-small">
                                     <div className="form__radio-group">
                                         <input type="radio" className="form__radio-input" id='smallTour' name="tourSize"/>
                                         <label htmlFor="smallTour" className="form__radio-label">

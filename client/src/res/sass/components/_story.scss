@@ -8,7 +8,21 @@
     color: rgba($color-black, .8);
     font-size: $default-font-size;
     transform: skewX(-12deg);
-     backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    @include respond(tab-port) {
+        border-radius: $round-medium;
+        width: 100%;
+        padding: 6rem 4rem 4rem 4rem;
+        transform: skewX(0deg);
+        
+    }
+
+    @include respond(phone) {
+        padding-top: 4rem;
+        transform: skewX(0deg);
+        border-radius: 3px;
+    }
     
     &__shape {
         position: relative;
@@ -17,11 +31,26 @@
         width: 15rem;
         height: 15rem;
         float: left;
+        
         transform: translate(-3rem, -1.5rem) skewX(12deg) scale(1);
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%); //defining where the content should float around the shape
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%); // this creates a real circle from original shape using clip.
+        
+        @include respond(tab-port) {
+            
+        margin-right: 2rem;
+        transform: skewX(0deg);
+        border-radius: 0;
+        
+        }
+
+        @include respond(phone) {
+            margin-right: 2rem;
+        transform: skewX(0deg);
+        border-radius: 0;
+        }
     }
 
     &__image {
@@ -34,6 +63,17 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(tab-port) {
+           
+            transform: skewX(0deg);
+             padding-left: 6rem;
+        }
+        
+        @include respond(phone) {
+            padding-left: 6rem;
+        transform: skewX(0deg);
+        }
     }
 
     &__caption {
