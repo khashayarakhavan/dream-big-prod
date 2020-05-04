@@ -34,18 +34,18 @@ ORDER: Base + Typography > General layout + Grid > Page layout > Components
     // Browsers' default: 1em = 16px // Medium Font-size
     
     @if $breakpoint == lightBar {
-        @media (max-width: 12.5em) { @content }; // 200px
+        @media only screen and (max-width: 12.5em) { @content }; // 200px
     }
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) { @content }; // 600px
+        @media only screen and (max-width: 37.5em) { @content }; // 600px
     }
     @if $breakpoint == tab-port {
-        @media (max-width: 56.25em) { @content }; // 900px
+        @media only screen and (max-width: 56.25em) { @content }; // 900px
     }
     @if $breakpoint == tab-land {
-        @media (max-width: 75em) { @content }; // 1200px
+        @media only screen and (max-width: 75em) { @content }; // 1200px
     }
     @if $breakpoint == desk-big {
-        @media (min-width: 100em) { @content }; // 1600px
+        @media only screen and (min-width: 100em) { @content }; // 1600px
     }
 }

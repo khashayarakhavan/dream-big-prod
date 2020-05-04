@@ -10,9 +10,9 @@ const Template = () => {
         <footer className="section-footer">
         <div className="footer">
 
-        {/* Art Direction for footer photo, changing size and resolution based on media queries. */}
         <div className="footer__logo-box">
-                    <picture className="footer__logo">
+        {/* Art Direction for footer photo, changing size and resolution density based on media queries. */}
+                    <picture clanssName="footer__logo">
                         <source srcSet={`${p2small} 1x, ${p2} 2x`} media="(max-width: 37.5em)" />
                         <img
                             className="footer__logo"

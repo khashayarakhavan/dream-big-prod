@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "autoprefixer": "^9.7.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -23,24 +27,27 @@
   },
   "scripts": {
     "scss": "node-sass src/res/sass/main.scss src/res/css/style.css -w",
+    "compile-scss": "node-sass src/res/sass/main.scss src/res/css/style.comp.css",
+    "concat-css": "concat -o src/res/css/style.concat.css src/res/css/icon-font.css src/res/css/style.comp.css",
+    "prefix-css": "postcss src/res/css/style.concat.css --use autoprefixer -o src/res/css/style.prefix.css",
+    "compress-css": "node-sass src/res/css/style.prefix.css src/res/css/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-scss concat-css prefix-css compress-css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "browserslist": [
+    "last 10 version",
+    "> 0.2%",
+    "IE 10"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }

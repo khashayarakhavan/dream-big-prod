@@ -10,12 +10,17 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease;
+    
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+
     &:target {
         opacity: 1;
         visibility: visible;
     }
-
-   
 
     &__close {
         &:link,
@@ -35,7 +40,6 @@
             color: $color-primary;
         }
     }
-
 
     &__content {
         @include centerAll;
@@ -64,7 +68,6 @@
         width: 33.3333%;
         display: table-cell;
     
-        
     }
 
     &__right {
@@ -93,8 +96,5 @@
         margin: 0 auto;
         height: 20rem;
     
-        
-
-        
     }
 }

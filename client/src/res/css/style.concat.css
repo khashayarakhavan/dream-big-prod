@@ -1,3 +1,449 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linea-basic-10";
+  src:url("fonts/linea-basic-10.eot");
+  src:url("fonts/linea-basic-10.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-basic-10.woff") format("woff"),
+    url("fonts/linea-basic-10.ttf") format("truetype"),
+    url("fonts/linea-basic-10.svg#linea-basic-10") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linea-basic-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "linea-basic-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basic-accelerator:before {
+  content: "a";
+}
+.icon-basic-alarm:before {
+  content: "b";
+}
+.icon-basic-anchor:before {
+  content: "c";
+}
+.icon-basic-anticlockwise:before {
+  content: "d";
+}
+.icon-basic-archive:before {
+  content: "e";
+}
+.icon-basic-archive-full:before {
+  content: "f";
+}
+.icon-basic-ban:before {
+  content: "g";
+}
+.icon-basic-battery-charge:before {
+  content: "h";
+}
+.icon-basic-battery-empty:before {
+  content: "i";
+}
+.icon-basic-battery-full:before {
+  content: "j";
+}
+.icon-basic-battery-half:before {
+  content: "k";
+}
+.icon-basic-bolt:before {
+  content: "l";
+}
+.icon-basic-book:before {
+  content: "m";
+}
+.icon-basic-book-pen:before {
+  content: "n";
+}
+.icon-basic-book-pencil:before {
+  content: "o";
+}
+.icon-basic-bookmark:before {
+  content: "p";
+}
+.icon-basic-calculator:before {
+  content: "q";
+}
+.icon-basic-calendar:before {
+  content: "r";
+}
+.icon-basic-cards-diamonds:before {
+  content: "s";
+}
+.icon-basic-cards-hearts:before {
+  content: "t";
+}
+.icon-basic-case:before {
+  content: "u";
+}
+.icon-basic-chronometer:before {
+  content: "v";
+}
+.icon-basic-clessidre:before {
+  content: "w";
+}
+.icon-basic-clock:before {
+  content: "x";
+}
+.icon-basic-clockwise:before {
+  content: "y";
+}
+.icon-basic-cloud:before {
+  content: "z";
+}
+.icon-basic-clubs:before {
+  content: "A";
+}
+.icon-basic-compass:before {
+  content: "B";
+}
+.icon-basic-cup:before {
+  content: "C";
+}
+.icon-basic-diamonds:before {
+  content: "D";
+}
+.icon-basic-display:before {
+  content: "E";
+}
+.icon-basic-download:before {
+  content: "F";
+}
+.icon-basic-exclamation:before {
+  content: "G";
+}
+.icon-basic-eye:before {
+  content: "H";
+}
+.icon-basic-eye-closed:before {
+  content: "I";
+}
+.icon-basic-female:before {
+  content: "J";
+}
+.icon-basic-flag1:before {
+  content: "K";
+}
+.icon-basic-flag2:before {
+  content: "L";
+}
+.icon-basic-floppydisk:before {
+  content: "M";
+}
+.icon-basic-folder:before {
+  content: "N";
+}
+.icon-basic-folder-multiple:before {
+  content: "O";
+}
+.icon-basic-gear:before {
+  content: "P";
+}
+.icon-basic-geolocalize-01:before {
+  content: "Q";
+}
+.icon-basic-geolocalize-05:before {
+  content: "R";
+}
+.icon-basic-globe:before {
+  content: "S";
+}
+.icon-basic-gunsight:before {
+  content: "T";
+}
+.icon-basic-hammer:before {
+  content: "U";
+}
+.icon-basic-headset:before {
+  content: "V";
+}
+.icon-basic-heart:before {
+  content: "W";
+}
+.icon-basic-heart-broken:before {
+  content: "X";
+}
+.icon-basic-helm:before {
+  content: "Y";
+}
+.icon-basic-home:before {
+  content: "Z";
+}
+.icon-basic-info:before {
+  content: "0";
+}
+.icon-basic-ipod:before {
+  content: "1";
+}
+.icon-basic-joypad:before {
+  content: "2";
+}
+.icon-basic-key:before {
+  content: "3";
+}
+.icon-basic-keyboard:before {
+  content: "4";
+}
+.icon-basic-laptop:before {
+  content: "5";
+}
+.icon-basic-life-buoy:before {
+  content: "6";
+}
+.icon-basic-lightbulb:before {
+  content: "7";
+}
+.icon-basic-link:before {
+  content: "8";
+}
+.icon-basic-lock:before {
+  content: "9";
+}
+.icon-basic-lock-open:before {
+  content: "!";
+}
+.icon-basic-magic-mouse:before {
+  content: "\"";
+}
+.icon-basic-magnifier:before {
+  content: "#";
+}
+.icon-basic-magnifier-minus:before {
+  content: "$";
+}
+.icon-basic-magnifier-plus:before {
+  content: "%";
+}
+.icon-basic-mail:before {
+  content: "&";
+}
+.icon-basic-mail-multiple:before {
+  content: "'";
+}
+.icon-basic-mail-open:before {
+  content: "(";
+}
+.icon-basic-mail-open-text:before {
+  content: ")";
+}
+.icon-basic-male:before {
+  content: "*";
+}
+.icon-basic-map:before {
+  content: "+";
+}
+.icon-basic-message:before {
+  content: ",";
+}
+.icon-basic-message-multiple:before {
+  content: "-";
+}
+.icon-basic-message-txt:before {
+  content: ".";
+}
+.icon-basic-mixer2:before {
+  content: "/";
+}
+.icon-basic-mouse:before {
+  content: ":";
+}
+.icon-basic-notebook:before {
+  content: ";";
+}
+.icon-basic-notebook-pen:before {
+  content: "<";
+}
+.icon-basic-notebook-pencil:before {
+  content: "=";
+}
+.icon-basic-paperplane:before {
+  content: ">";
+}
+.icon-basic-pencil-ruler:before {
+  content: "?";
+}
+.icon-basic-pencil-ruler-pen:before {
+  content: "@";
+}
+.icon-basic-photo:before {
+  content: "[";
+}
+.icon-basic-picture:before {
+  content: "]";
+}
+.icon-basic-picture-multiple:before {
+  content: "^";
+}
+.icon-basic-pin1:before {
+  content: "_";
+}
+.icon-basic-pin2:before {
+  content: "`";
+}
+.icon-basic-postcard:before {
+  content: "{";
+}
+.icon-basic-postcard-multiple:before {
+  content: "|";
+}
+.icon-basic-printer:before {
+  content: "}";
+}
+.icon-basic-question:before {
+  content: "~";
+}
+.icon-basic-rss:before {
+  content: "\\";
+}
+.icon-basic-server:before {
+  content: "\e000";
+}
+.icon-basic-server2:before {
+  content: "\e001";
+}
+.icon-basic-server-cloud:before {
+  content: "\e002";
+}
+.icon-basic-server-download:before {
+  content: "\e003";
+}
+.icon-basic-server-upload:before {
+  content: "\e004";
+}
+.icon-basic-settings:before {
+  content: "\e005";
+}
+.icon-basic-share:before {
+  content: "\e006";
+}
+.icon-basic-sheet:before {
+  content: "\e007";
+}
+.icon-basic-sheet-multiple:before {
+  content: "\e008";
+}
+.icon-basic-sheet-pen:before {
+  content: "\e009";
+}
+.icon-basic-sheet-pencil:before {
+  content: "\e00a";
+}
+.icon-basic-sheet-txt:before {
+  content: "\e00b";
+}
+.icon-basic-signs:before {
+  content: "\e00c";
+}
+.icon-basic-smartphone:before {
+  content: "\e00d";
+}
+.icon-basic-spades:before {
+  content: "\e00e";
+}
+.icon-basic-spread:before {
+  content: "\e00f";
+}
+.icon-basic-spread-bookmark:before {
+  content: "\e010";
+}
+.icon-basic-spread-text:before {
+  content: "\e011";
+}
+.icon-basic-spread-text-bookmark:before {
+  content: "\e012";
+}
+.icon-basic-star:before {
+  content: "\e013";
+}
+.icon-basic-tablet:before {
+  content: "\e014";
+}
+.icon-basic-target:before {
+  content: "\e015";
+}
+.icon-basic-todo:before {
+  content: "\e016";
+}
+.icon-basic-todo-pen:before {
+  content: "\e017";
+}
+.icon-basic-todo-pencil:before {
+  content: "\e018";
+}
+.icon-basic-todo-txt:before {
+  content: "\e019";
+}
+.icon-basic-todolist-pen:before {
+  content: "\e01a";
+}
+.icon-basic-todolist-pencil:before {
+  content: "\e01b";
+}
+.icon-basic-trashcan:before {
+  content: "\e01c";
+}
+.icon-basic-trashcan-full:before {
+  content: "\e01d";
+}
+.icon-basic-trashcan-refresh:before {
+  content: "\e01e";
+}
+.icon-basic-trashcan-remove:before {
+  content: "\e01f";
+}
+.icon-basic-upload:before {
+  content: "\e020";
+}
+.icon-basic-usb:before {
+  content: "\e021";
+}
+.icon-basic-video:before {
+  content: "\e022";
+}
+.icon-basic-watch:before {
+  content: "\e023";
+}
+.icon-basic-webpage:before {
+  content: "\e024";
+}
+.icon-basic-webpage-img-txt:before {
+  content: "\e025";
+}
+.icon-basic-webpage-multiple:before {
+  content: "\e026";
+}
+.icon-basic-webpage-txt:before {
+  content: "\e027";
+}
+.icon-basic-world:before {
+  content: "\e028";
+}
+
 /* 
 0 - 200px:      Light-Bar
 200 - 600px:    Phone
@@ -16,25 +462,25 @@ ORDER: Base + Typography > General layout + Grid > Page layout > Components
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-small {
       margin-bottom: 1rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
 .u-margin-bottom-large {
   margin-bottom: 20rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-large {
       margin-bottom: 10rem !important; } }
 
@@ -87,32 +533,28 @@ ORDER: Base + Typography > General layout + Grid > Page layout > Components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 100em) {
+  @media (min-width: 100em) {
     html {
       font-size: 75%; } }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     html {
       font-size: 43.75%; } }
-  @media only screen and (max-width: 12.5em) {
+  @media (max-width: 12.5em) {
     html {
       font-size: 12.5%; } }
 
 body {
   box-sizing: border-box;
   padding: 0 3rem 0 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     body {
       padding: 0; } }
-
-::selection {
-  background-color: #1589cc;
-  color: #fff; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -139,11 +581,11 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .heading-primary--main {
         font-size: 3rem;
         letter-spacing: 2.5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 2.5rem;
         letter-spacing: 1.5rem; } }
@@ -153,7 +595,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 1rem; } }
 
@@ -167,10 +609,10 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -181,10 +623,10 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .heading-tertiary {
       font-size: 1.1rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 0.6rem; } }
 
@@ -197,7 +639,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 10rem;
   margin-top: -20vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-about {
       padding: 15rem 0; } }
 
@@ -209,7 +651,7 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
 
@@ -217,21 +659,21 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 10rem 15rem 10rem;
   margin-top: -10rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-tours {
       padding: 20rem 5rem 10rem 5rem; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0rem; } }
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #6bb2db, #094e7c); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-booking {
       padding: 10rem 0rem; } }
 
@@ -243,20 +685,20 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .book__form {
         width: 70%;
         border-radius: 3px; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .book__form {
         width: 100%;
         border-radius: 3px; } }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     .book {
       background-size: cover;
       border-radius: 3px;
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%), url(../img/nat-10.jpg); } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .book {
       border-radius: 3px;
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/nat-10.jpg); } }
@@ -344,7 +786,7 @@ body {
     z-index: 0;
     transition: all .2s;
     outline-offset: 1rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .composition__photo {
         position: relative;
         float: left;
@@ -353,14 +795,14 @@ body {
     .composition__photo--p1 {
       left: 0rem;
       top: -2rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.1); } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.3);
@@ -368,7 +810,7 @@ body {
     .composition__photo--p3 {
       left: 10%;
       top: 10rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 0;
           left: 0;
@@ -389,7 +831,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.22);
   transition: transform .4s; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
   .feature-box:hover {
@@ -402,7 +844,7 @@ body {
     background-image: linear-gradient(to right, #6bb2db, #094e7c);
     -webkit-background-clip: text;
     color: transparent; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0; } }
 
@@ -498,7 +940,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 3rem;
@@ -543,13 +985,13 @@ body {
   font-size: 1.6rem;
   transform: skewX(-12deg);
   backface-visibility: hidden; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .story {
       border-radius: 10px;
       width: 100%;
       padding: 6rem 4rem 4rem 4rem;
       transform: skewX(0deg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .story {
       padding-top: 4rem;
       transform: skewX(0deg);
@@ -571,12 +1013,12 @@ body {
         shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
         border-radius: none; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .story__shape {
         margin-right: 2rem;
         transform: skewX(0deg);
         border-radius: 0; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__shape {
         margin-right: 2rem;
         transform: skewX(0deg);
@@ -588,11 +1030,11 @@ body {
     backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .story__text {
         transform: skewX(0deg);
         padding-left: 6rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__text {
         padding-left: 6rem;
         transform: skewX(0deg); } }
@@ -635,7 +1077,7 @@ body {
 
 .form__group {
   margin-bottom: 2rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .form__group {
       margin-bottom: .2rem; } }
 
@@ -652,7 +1094,7 @@ body {
   outline: none;
   width: 90%;
   transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .form__input {
       width: 95%;
       border-radius: 3px; } }
@@ -688,7 +1130,7 @@ body {
 .form__radio-group {
   width: 50%;
   display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .form__radio-group {
       width: 100%;
       margin-bottom: 2rem; } }
@@ -816,10 +1258,10 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       height: 95vh; } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero-small.jpg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -851,11 +1293,11 @@ body {
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
       right: 1rem; } }
@@ -890,11 +1332,11 @@ body {
   z-index: 1000;
   background-image: radial-gradient(#6bb2db, #094e7c);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
       right: 2.5rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
       right: 1.5rem; } }
@@ -987,13 +1429,13 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
   .row::after {
@@ -1004,11 +1446,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 10rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -1028,16 +1470,16 @@ body {
   background-color: #333;
   padding: 10rem 0rem;
   font-size: 1.4rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .footer__logo-box {
         margin-bottom: 4rem; } }
   .footer__logo {
@@ -1047,7 +1489,7 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -1075,7 +1517,7 @@ body {
     display: inline-block;
     width: 78%;
     float: right; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none; } }

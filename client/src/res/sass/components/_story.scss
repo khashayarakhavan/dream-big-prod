@@ -26,24 +26,27 @@
     
     &__shape {
         position: relative;
-         backface-visibility: hidden;
-          transition: all .9s ease;
+        backface-visibility: hidden;
+        transition: all .9s ease;
         width: 15rem;
         height: 15rem;
         float: left;
-        
+        border-radius: 50%;
+        overflow: hidden;
         transform: translate(-3rem, -1.5rem) skewX(12deg) scale(1);
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%); //defining where the content should float around the shape
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%); // this creates a real circle from original shape using clip.
+               
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            clip-path: circle(50% at 50% 50%); // this creates a real circle from original shape using clip.
+            -webkit-clip-path: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%); //defining where the content should float around the shape
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
         
         @include respond(tab-port) {
-            
         margin-right: 2rem;
         transform: skewX(0deg);
         border-radius: 0;
-        
         }
 
         @include respond(phone) {
