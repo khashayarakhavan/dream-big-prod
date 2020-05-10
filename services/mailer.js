@@ -43,9 +43,20 @@ const getEmailData = (from, subject, body, template, survey) => {
       //   "o:tracking-clicks": 'True'
       // };
 
-      default: data;
+      default: data= {
+        from: from,
+        to: "akhavan.khashayar@gmail.com",
+        cc: "akhavan.khashayar@gmail.com",
+        bcc: "akhavan.khashayar@gmail.com",
+        subject: subject,
+        text: body,
+        html: Hello(body,subject,from,survey),
+        // attachments: [{ filename: "picture.JPG", path: "./picture.JPG" }],
+        "o:tracking": 'True',
+        "o:tracking-clicks": 'True'
+      };
   } 
-  return data;
+  return   data;
 };
 
 // Step3 define sendMail to send email and receive callback
