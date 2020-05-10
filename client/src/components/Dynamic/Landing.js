@@ -8,6 +8,7 @@ import SectionFeatures from '../Static/sectionFeatures';
 import SectionTours from '../Static/sectionTours';
 import SectionFooter from '../Static/sectionFooter';
 import Navigation from '../Static/navigation';
+import UpButton from "../Static/UpButton";
 import PopUp from '../Static/popUp';
 
 import '../../res/css/style.css';
@@ -16,6 +17,7 @@ const Landing = () => {
     return (
       <div>
         <Navigation key="8" />
+        <UpButton />
         <HeroHeader key='1'/>
         <main>
           <SectionAbout ID='2' />

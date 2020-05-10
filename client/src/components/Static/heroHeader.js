@@ -3,7 +3,7 @@ import logo from '../../res/img/logo-white.png';
 
 const Template = () => {
     return (
-        <header className="header">
+        <header className="header" id="header">
             <div className="header__logo-box">
                 <img src={logo} alt="logo" className="header__logo" />
             </div>

@@ -1,4 +1,4 @@
-.navigation {
+.UpButton {
       
     &__checkbox {
         display: none;
@@ -12,54 +12,61 @@
         text-align: center;
         position: fixed;
         border-radius: 50%;
-        top: 6rem;
+        bottom: 4rem;
         right: 6rem;
-        z-index: $layer-top;
-        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        z-index: 1000000;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
         cursor: pointer;
         overflow: hidden;
-
+        
+        &--link {
+            width: 100%;
+            border-radius: 50%;
+            background-color: red;
+           
+        }
         // RESPONSIVE: Define the margins of foreground circle in the menu button. 
         @include respond(tab-port) {
-            top: 4rem;
+            bottom: 2rem;
             right: 2rem;
         }
         @include respond(phone) {
-            top: 3rem;
+            bottom: 2rem;
             right: 1rem;
         }
 
-        &::after {
-            content: "";
-            display: inline-block;
-            border: .6rem solid rosybrown;
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            background-color: $color-white;
-            opacity: .5;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: $layer-B1;
-            transition: all .9s ease-in-out;
-        }
-
         &:hover {
-            box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
-            &::after {
-                transform: scaleX(1.4) scaleY(1.6);
-                // transform: rotate(-5deg);
-                opacity: 0;
-                // background-color: $color-primary-dark;
-                border: 5px solid red;
-            }
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            transform: rotate(90deg);
+            opacity: 0;
+            // background-color: $color-primary-dark;
+            border: 5px solid red;
+          
         }
+        }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        border: 5px solid white;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: $color-white;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1000;
+        transition: all .9s;
+    }
 
     }
 
-    // Menu Design
     &__background {
         height: 6rem;
         width: 6rem;
@@ -89,7 +96,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: $layer-B1 ;
+        z-index: $layer-B2   ;
         transition: all .8s cubic-bezier(0.68, -.55, 0.265, 1.55);
 
     }
@@ -135,32 +142,46 @@
         
     }
 
-    //Functionality Structure
-
-    // Scale the background --was hidden behind button, 90 times bigger
-    // Create a pouring-the-water feel.  
+    //Functionality
     &__checkbox:checked ~ &__background {
-        transform: scale(90);
+        // transform: scale(90);
+        // width: 10vw;
+        // height: 100vh;
+        // top: 0;
+        // right: 0;
     }
 
     &__checkbox:checked ~ &__nav {
-        opacity: 1;
+        opacity:1;
         width: 100%;
-        z-index: $layer-1;
+        z-index: $layer-B2;
     }
 
     //Icon
     &__icon {
         position: relative;
         margin-top: 3.3rem;
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
         
-        &,
         &::before,
         &::after {
             display: inline-block;
             width: 3rem;
             height: 3px;
             background-color: $color-grey-dark-3;
+            transition: all .2s ;
+        }
+
+        &,
+         {
+            display: inline-block;
+            width: 3rem;
+            height: 3px;
+            background-color: transparent;
             transition: all .2s ;
         }
 
@@ -171,21 +192,20 @@
             left: 0rem;
         }
 
-        &::before { top: -.8rem; } 
-        &::after { top: .8rem;}
+        &::before { 
+            top: 0rem;
+            left: 1rem;
+            transform: rotate(45deg);
+        } 
+        
+        &::after { 
+            top: 0rem;
+            left: -1rem;
+            transform: rotate(-45deg);
+
+        }
     }
 
-    // move 1st copy of the bar icon
-    &__button:hover &__icon::before {
-        top: 1rem;
-        
-    }
-    // move 2nd copy of the bar icon
-    &__button:hover &__icon::after {
-        top: -1rem;
-        
-    }
-    
     &__checkbox:checked + &__button &__icon {
         background-color: transparent;
     }
