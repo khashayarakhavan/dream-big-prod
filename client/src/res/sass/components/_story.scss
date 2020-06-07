@@ -96,18 +96,21 @@
 
     &:hover &__caption {
         opacity: 1;
+        transform: skewX(0deg);
         transform: translate(-50%, -50%);
         // font-size: 1.7rem;
          backface-visibility: hidden;
     }
 
     &:hover &__image {
-        transform: translateX(-4rem) scale(1.3);
+        transform: translateX(-4rem) scale(1.2);
+        transform: skewX(0deg);
         -webkit-filter: blur(5px) sepia(90%) brightness(80%);
       
     }
 
     &:hover &__shape {
         transform: translate(-3rem, -1.5rem) skewX(12deg) scale(.96);
+        transform: skewX(0deg);
     }
 }
