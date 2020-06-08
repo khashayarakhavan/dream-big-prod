@@ -44,23 +44,23 @@
         }
         
         @include respond(tab-port) {
-        margin-right: 2rem;
-        transform: skewX(0deg);
-        border-radius: 0;
+            margin-right: 2rem;
+            transform: skewX(0deg);
+            border-radius: 0;
         }
 
         @include respond(phone) {
             margin-right: 2rem;
-        transform: skewX(0deg);
-        border-radius: 0;
+            transform: skewX(0deg);
+            border-radius: 0;
         }
     }
 
     &__image {
         height: 100%;
         transform: translateX(-4rem) scale(1.3);
-         transition: all .9s ;
-          backface-visibility: hidden;
+        transition: all .9s ;
+        backface-visibility: hidden;
 
     }
 
@@ -68,14 +68,13 @@
         transform: skewX(12deg);
 
         @include respond(tab-port) {
-           
             transform: skewX(0deg);
-             padding-left: 6rem;
+            padding-left: 6rem;
         }
         
         @include respond(phone) {
             padding-left: 6rem;
-        transform: skewX(0deg);
+            transform: skewX(0deg);
         }
     }
 
@@ -103,14 +102,20 @@
     }
 
     &:hover &__image {
-        transform: translateX(-4rem) scale(1.2);
-        transform: skewX(0deg);
         -webkit-filter: blur(5px) sepia(90%) brightness(80%);
-      
+        transform: translateX(-4rem) scale(1.3);
     }
 
     &:hover &__shape {
-        transform: translate(-3rem, -1.5rem) skewX(12deg) scale(.96);
-        transform: skewX(0deg);
+        transform: translate(-3rem, -1.5rem) skew(12deg) scale(.96);
+        
+        @include respond(tab-port) {   
+            transform: skewX(0deg) scale(.96); 
+        }
+        
+        @include respond(phone) {
+            transform: skewX(0deg) scale(.96);
+        }
+        
     }
 }

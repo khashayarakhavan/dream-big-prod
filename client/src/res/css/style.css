@@ -616,12 +616,16 @@ body {
     transform: translate(-50%, -50%);
     backface-visibility: hidden; }
   .story:hover .story__image {
-    transform: translateX(-4rem) scale(1.2);
-    transform: skewX(0deg);
-    -webkit-filter: blur(5px) sepia(90%) brightness(80%); }
+    -webkit-filter: blur(5px) sepia(90%) brightness(80%);
+    transform: translateX(-4rem) scale(1.3); }
   .story:hover .story__shape {
-    transform: translate(-3rem, -1.5rem) skewX(12deg) scale(0.96);
-    transform: skewX(0deg); }
+    transform: translate(-3rem, -1.5rem) skew(12deg) scale(0.96); }
+    @media only screen and (max-width: 56.25em) {
+      .story:hover .story__shape {
+        transform: skewX(0deg) scale(0.96); } }
+    @media only screen and (max-width: 37.5em) {
+      .story:hover .story__shape {
+        transform: skewX(0deg) scale(0.96); } }
 
 .bg-video {
   position: absolute;
